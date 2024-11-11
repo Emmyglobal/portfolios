@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit card payment</title>
+    <link rel="stylesheet" href="style-payment.css">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    box-sizing: border-box;
+    background: url('background.jpg') no-repeat center fixed;
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.main-header{
+    text-align: center;
+    color: #fff;
+    background: linear-gradient(to right, #4d3e4e, #354e36);
+    padding: 25px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.main-header h1{
+    font-size: 40px;
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+.main-header img{
+    display: inline;
+    width: 80px;
+    vertical-align: middle;
+    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.2));
+    opacity: 0.85;
+}
+.description{
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 700px;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px auto;
+    text-align: center;
+}
+.description p{
+    font-size: 18px;
+    line-height: 1.5;
+}
+.header{
+    color: #ffffff;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 15px;
+    border-radius: 8px 8px 0 0;
+    font-size: 24px;
+    background: linear-gradient(to right, #4d3e4e, #354e36);
+}
+.header img{
+    width: 50px;
+    height: 50px;
+}
+.container{
+    max-width: 500px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 8px;
+}
+.form-group{
+    color: #100011;
+    padding: 10px;
+}
+.form-group input, select{
+    border-radius: 5px;
+    border: none;
+    height: 40px;
+    width: 400px;
+}
+button{
+    background: rgb(0, 255, 98);
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    width: 400px;
+    margin-left: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+button:hover{
+    width: 405px;
+    background-color: #23db29;
+    border-radius: 4px;
+}
+button:active{
+    cursor: progress;
+    background: rgb(0, 255, 98);
+    width: 400px;
+}
+label {
+    display: block;
+    color: #044e20;
+}
+@media (max-width: 600px){
+    .container{
+        padding: 10px;
+    }
+
+}
+    </style>
+<body>
+    <header class="main-header">
+        <img src="logo1.jpg" alt="company logo">
+        <h1>Welcome to Secure Payments</h1>
+    </header>
+
+    <div class="description">
+        <p>Our secure credit card payment platform ensures the safety and privacy of your transactions.
+           Please fill in your payment details below to complete your purchase.</p>
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <img src="logo1.jpg" alt="Company Logo of Emmyglobal">
+            <h2>Credit Card Checkout</h2>
+        </div>
+        <form action="#">
+            <div class="form-group">
+                <label for="cardholderName">Name on Card:</label>
+                <input type="text" name="cardholderName" id="cardholderName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="cardNumber">Card Number:</label>
+                <input type="number" name="cardNumber" id="cardNumber" maxlength="19" pattern="\d{16,19}"  required>
+            </div>
+            <div class="form-group">
+                <label for="expirationDate">Expiration Date (MM/YY):</label>
+                <input type="text" name="expirationDate" id="expirationDate" placeholder="MM/YY" maxlength="5" pattern="^(0[1-9]|1[0-2])/\d{2}$" required>
+            </div>
+
+            <div class="form-group">
+                <label for="cvv">CVV Security Code:</label>
+                <input type="number" name="cvv" id="cvv" maxlength="4" pattern="\d{3,4}" required>
+            </div>
+
+            <h3>Billing Address</h3>
+            <div class="form-group">
+                <label for="billingAddress">Billing Address:</label>
+                <input type="text" name="billingAddress" id="billingAddress" required>
+            </div>
+
+            <div class="form-group">
+                <label for="city">City</label>
+                <input type="text" name="city" id="city" required>
+            </div>
+
+            <div class="form-group">
+                <label for="state">State/Province:</label>
+                <input type="text" name="state" id="state" required>
+            </div>
+
+            <div class="form-group">
+                <label for="zip">Zip/Postal Code:</label>
+                <input type="text" name="zip" id="zip" required>
+            </div>
+
+            <div class="form-group">
+                <label for="country">Country:</label>
+                <input type="text" name="country" id="country" required>
+            </div>
+
+            <div class="form-group">
+                <label for="amount">Amount:</label>
+                <input type="text" name="amount" required id="amount">
+            </div>
+
+            <div class="form-group">
+                <label for="currency">Currency:</label>
+                <select name="currency" id="currency">
+                    <option value="ngn">NGN</option>
+                    <option value="usd">USD</option>
+                    <option value="ghc">GHC</option>
+                    <option value="jpy">JPY</option>
+                </select>
+            </div>
+            <button type="submit">Make Payment</button>
+        </form>
+    </div>
+    
+</body>
+</html>

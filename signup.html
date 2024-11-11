@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .hero{
+            display:flex;
+            flex-direction: column;
+            align-content: center;
+            gap: 10px;
+            box-shadow: 0 4px 8px  rgba(66, 26, 26, 0.1);
+            height: 90vh;
+        }
+        input, button{
+            border-radius: 8px;
+            height: 30px;
+            border: none;
+            box-shadow: 0 4px 8px  rgba(204, 72, 72, 0.1);
+            -webkit-box-shadow: 0 4px 8px rgba(138, 36, 36, 0.1);
+        }
+        button{
+            width:fit-content;
+            background: linear-gradient(to left, #4facfe, #00f2fe);
+            align-self: center;
+            padding: 10px;
+            color: #fff;
+            font-weight: bold;
+            font-size: 16px;
+            border: none;
+            transition: all 0.3s ease;
+            -webkit-transition: all 0.3s ease;
+        }
+        h6{
+            align-self: center;
+            color: #fff;
+        }
+        a{
+            text-decoration: none;
+            color: #007bff;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        button:hover {
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            padding: 12px 24px;
+            box-shadow: 0 6px 12px rgba(0, 123, 255, 0.3);
+            transform: translateY(-2px); /* Slight move up on hover */
+        }
+        button:active {
+            transform: translateY(2px); /* Slight move down on click */
+            box-shadow: 0 2px 5px rgba(0, 68, 148, 0.5);
+        }
+        .header > h1 {
+            color: #fff;
+            font-size: 50px;
+        }
+        input[placeholder] {
+            font-family:'Courier New', Courier, monospace;
+            padding: 5px;
+            color: #aaa;
+            font-style: italic;
+        }
+        
+        input[type] {
+            padding: 4px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+        }
+        input[type]:hover {
+            border-color: #007bff; /* Change border color on hover */
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add a subtle shadow on hover */
+            -webkit-box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+                }
+                @media (min-width: 420px) and (max-width: 900px){
+
+                }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Sign up</h1>
+    </div>
+    <div class="hero">
+        <label for="first-name"></label><input placeholder="*First Name" type="text" size="30">
+        <label for="last-name"></label><input placeholder="*Surname" type="text" size="30">
+        <label for="email"></label><input placeholder="*Email" type="email" size="30">
+        <label for="password"></label><input placeholder="*Password:" type="password" size="30">
+        <label for="password"></label><input placeholder="*Enter your password again" type="password" size="30">
+        <button type="button">Create Account</button>
+        <h6>Already have an account? <a href="#">Log in</a></h6>
+    </div>
+</body>
+</html>

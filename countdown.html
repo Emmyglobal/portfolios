@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" href="countdown.css">
+    <link rel="stylesheet" href="user_profile.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <img src="logo1.jpg" alt="Logo">
+                <h1>Emmyglobal</h1>
+            </div>
+            <div class="link">
+                <a href="user_profile.html">Home</a>
+                <a href="hands-on.html">Hands-on Projects</a>
+                <a href="aboutprofile.html">About</a>
+                <a href="signup.html">Contact</a>
+            </div>
+        </div>
+        <div class="countdown-container">
+            <h1>Event Countdown</h1>
+            <div id="countdown">
+                <div><span id="days">00</span><span>Days</span></div>
+                <div><span id="hours">00</span><span>Hours</span></div>
+                <div><span id="minutes">00</span><span>Minutes</span></div>
+                <div><span id="seconds">00</span><span>Seconds</span></div>
+            </div>
+    
+            <!-- Buttons for controlling the timer -->
+            <div class="buttons">
+                <button id="startBtn">Start</button>
+                <button id="pauseBtn">Pause</button>
+                <button id="resetBtn">Reset</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="countdown.js"></script>
+</body>
+</html>

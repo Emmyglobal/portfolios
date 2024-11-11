@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    text-align: center;
+    color: rgb(156, 86, 184);
+}
+li{
+    display: inline;
+}
+#header {
+    background-color: greenyellow;
+}
+.hero{
+    color: #356;
+    background-color: aquamarine;
+}
+img[alt]{
+    color: red;
+}

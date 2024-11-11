@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<body>
+    <table align="center">
+        <tr>
+            <td colspan="2">
+                <h1>Survey Form</h1>
+                <h3>Let us know how we can improve in our coding class</h3>
+                <hr>
+            </td>
+        </tr>
+        <tr>
+            <td>* Name:</td>
+            <td><input type="text" placeholder="Enter your name" size="50px" required></td>
+        </tr>
+        <tr><td colspan="2"><br></td></tr>
+
+        <tr>
+            <td>* Email:</td>
+            <td><input type="email" size="50px" placeholder="Enter your Email" required></td>
+        </tr>
+        <tr><td colspan="2"><br></td></tr>
+
+        <tr>
+            <td>* Age:</td>
+            <td><input type="number" required id="age" name="age" min="10" max="100" value="Age" placeholder="Age"></td>
+        </tr>
+        <tr><td colspan="2"><br></td></tr>
+
+        <tr>
+            <td>Which option best describes your role:</td>
+            <td>
+                <select name="type">
+                    <option value="secondary">Secondary Student</option>
+                    <option value="O'level">O'level</option>
+                    <option value="university">University Student</option>
+                </select>
+            </td>
+        </tr>
+        <tr><td colspan="2"><br></td></tr>
+
+        <tr>
+            <td colspan="2">* How likely is that you would recommend our coding class?</td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <label>
+                    <input type="radio" name="option" value="Definitely">
+                    Definitely
+                </label><br>
+                <label>
+                    <input type="radio" name="option" value="Maybe">
+                    Maybe
+                </label><br>
+                <label>
+                    <input type="radio" name="option" value="Not sure">
+                    Not sure
+                </label>
+            </td>
+        </tr>
+        <tr><td colspan="2"><br></td></tr>
+
+        <tr>
+            <td>What do you like mostly in our class?</td>
+            <td>
+                <select name="interest">
+                    <option value="theory" selected>Theory part</option>
+                    <option value="practical">Practical part</option>
+                    <option value="assignment">Assignments</option>
+                    <option value="exercise">Exercise</option>
+                </select>
+            </td>
+        </tr>
+        <tr><td colspan="2"><br></td></tr>
+
+        <tr>
+            <td colspan="2">Things that should be improved in the future:</td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <label>
+                    <input type="checkbox" name="improvement" value="Assignments"> 
+                    Assignments
+                </label><br>
+                <label>
+                    <input type="checkbox" name="improvement" value="Projects"> 
+                    Projects
+                </label><br>
+                <label>
+                    <input type="checkbox" name="improvement" value="Exercise"> 
+                    Exercise
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td>
+                <button type="submit">Submit</button>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

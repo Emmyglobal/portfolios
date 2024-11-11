@@ -1,0 +1,79 @@
+/* styles.css */
+
+/* General body and font styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  h3 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Social Share container */
+  .share-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Social icons container */
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  /* Style for each social icon link */
+  .social-icons a {
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #fff;
+    transition: background-color 0.3s ease;
+  }
+  
+  .social-icons a i {
+    font-size: 24px;
+  }
+  
+  /* Facebook */
+  .facebook {
+    background-color: #4267B2;
+  }
+  
+  .facebook:hover {
+    background-color: #365899;
+  }
+  
+  /* Twitter */
+  .twitter {
+    background-color: #1DA1F2;
+  }
+  
+  .twitter:hover {
+    background-color: #0d8ae7;
+  }
+  
+  /* LinkedIn */
+  .linkedin {
+    background-color: #0077B5;
+  }
+  
+  .linkedin:hover {
+    background-color: #005582;
+  }
+  

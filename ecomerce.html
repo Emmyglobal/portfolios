@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ecomerce.css">
+    <title>Purely Sudsy - Handmade Soaps</title>
+</head>
+<body>
+    <header>
+        <div class="logo">Purely Sudsy</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Nature's Cleanse, Handcrafted with Love</h1>
+            <a href="#products" class="cta">Shop Now</a>
+        </section>
+
+        <section id="products" class="product-list">
+            <h2>Featured Products</h2>
+            <div class="product" data-name="Lavender Soap" data-price="5.00">
+                <img src="product2.png" alt="Lavender Soap">
+                <h3>Lavender Soap</h3>
+                <p>$5.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-name="Citrus Soap" data-price="5.00">
+                <img src="product1.png" alt="Citrus Soap">
+                <h3>Citrus Soap</h3>
+                <p>$5.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <!-- Add more products as needed -->
+        </section>
+
+        <section class="cart">
+            <h2>Your Cart</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: $<span id="total-price">0.00</span></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Purely Sudsy. All rights reserved.</p>
+    </footer>
+
+    <script src="ecomerce.js"></script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f2f2f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* Music Player Container */
+.music-player {
+  background-color: #333;
+  color: #fff;
+  width: 90%;
+  max-width: 800px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Album Cover and Song Info */
+.album-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.album-cover {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.song-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.song-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.artist-name {
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* Player Controls */
+.controls {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.controls button {
+  background-color: #444;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  margin: 0 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+.controls button:hover {
+  background-color: #555;
+}
+
+/* Progress Bar */
+.progress-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.progress-bar {
+  flex: 1;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.current-time,
+.duration {
+  font-size: 12px;
+  color: #ccc;
+}
+
+/* Volume Control */
+.volume-control {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.volume-icon {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.volume-slider {
+  flex: 1;
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .music-player {
+    padding: 15px;
+  }
+
+  .album-cover {
+    width: 80px;
+    height: 80px;
+  }
+
+  .controls button {
+    padding: 8px 12px;
+    font-size: 16px;
+  }
+
+  .progress-bar,
+  .volume-slider {
+    margin: 0 5px;
+  }
+}

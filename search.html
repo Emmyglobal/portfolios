@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/75e53ee709.js" crossorigin="anonymous"></script>
+    <title>Expandable Search</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        .nav{
+            background-color: yellow;
+            height: 10%;
+            text-align: center;
+            outline: none;
+        }
+        input{
+            border: none;
+            margin: 15px 0 0 auto;
+            text-align: center;
+            width: 0px;
+            outline: none;
+
+        }
+        .hero{
+            background-color: #7d2ae8;
+            height: 90%;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .fas{
+            color: black;
+        }
+        .fas:hover{
+            color: #333;
+            cursor:pointer;
+        }
+        input.active-search{
+            width: 80px;
+            border-radius: 12px;
+            border: 1px solid gray;
+            padding: 10px 5px;
+            margin: 15px 0 0 auto;
+            font-size: 16px;
+            box-shadow: 0 1px 5px 2px rgba(0, 0, 0, 0.3);
+            transition: 0.3s width ease-in;
+        }
+        input.active-search:hover{
+            width: 120px;
+            transition: 0.3s width ease-in;
+        }
+        input.active-search:focus{
+            width: 300px;
+            transition: 0.6s width ease-in;
+        }
+    </style>
+</head>
+<body id="main">
+    <div class="container" >
+        <div class="nav">
+            <form action="">
+                <label for="search-input">
+                    <input type="search" class="active-search" id="search-input" placeholder="Search"/>
+                    <i id="search-btn" class="fas fa-search"></i>
+                </label>
+            </form>
+        </div>
+        <div class="hero">
+            <h1>Expandable Search Bar</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas repudiandae debitis eligendi corrupti, sapiente assumenda sit pariatur adipisci. Quidem deleniti totam, corrupti officia obcaecati similique laudantium illo sed officiis odit.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum delectus excepturi laborum dolorem, enim quibusdam voluptates id ipsam officia quas quia eius distinctio soluta doloribus ex sit necessitatibus iure magni.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis laudantium aspernatur doloremque eveniet incidunt, possimus exercitationem iure, fuga sapiente odio optio vitae laborum eligendi ipsum voluptas quibusdam eos nemo quas?</p>
+        </div>
+    </div>
+    <script>
+    //     document.addEventListener("DOMContentLoaded", () => {
+    //         const srch = document.querySelector('#search-input');
+    //     const iconSearch = document.getElementById('search-btn');
+
+    //     iconSearch.addEventListener('click', (event) => {
+    //         event.stopPropagation();
+    //         srch.classList.toggle('active-search');
+    //     });
+    //     srch.addEventListener('click', (event) => {
+    //     event.stopPropagation();  // Prevent click inside input from reaching #main
+    // });
+    //     document.getElementById('main').addEventListener("click", () => {
+    //         srch.classList.remove('active-search');
+    //     });
+    //     });
+    </script>
+</body>
+</html>

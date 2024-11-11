@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header {
+    background: linear-gradient(300deg, #9508d6, #7e24e4, #390966);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  body {
+    background: linear-gradient(300deg, #f2edf5, #bcb1c9, #9f8daf);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+.header{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.header h1{
+    font-family: 'Sono', sans-serif;
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+.header li{
+    list-style: none;
+    display: inline;
+    font-size: 1.4rem;
+    border-right: 1px solid;
+    padding:0 50px ;
+}
+.header li a{
+    text-decoration: none;
+    color: #fff;
+}
+a:hover{
+    color: #eee5e5;
+    font-size: 22px;
+    transition: font-size 0.3s ease-in-out;
+}
+button{
+    border: none;
+    margin: 15px;
+    padding: 10px;
+    color: #fff;
+    background: blue;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+button:hover{
+    background-color: #392bf3;
+    padding: 11px;
+}
+button:active{
+    padding: 10px;
+    cursor: progress;
+}
+.jumbotron{
+    padding: 20px;
+    text-align: center;
+    background-color: transparent; 
+    text-align: center; 
+    margin: 0; 
+    letter-spacing: 2.5px; 
+}
+.jumbotron h2{
+    font-size: 3rem;
+    color: #333;
+    padding: 10px;
+}
+ p{
+    font-size: 18px;
+    color: #666;
+}
+.features, .pricing-plans{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100vw;
+    
+}
+h2{
+    text-align: center;
+    margin: 50px auto 0 auto;
+    font-size: 2rem;
+    color: #000;
+}
+h3{
+    font-size: 1.5rem;
+    padding: 10px;
+}
+.management, .price{
+    background: #eee5e5;
+    border-radius: 10px;
+    text-align: center;
+    align-self: center;
+    padding: 35px;
+    width: 20%;
+    height: 200px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.testimonials{
+    text-align: center;
+    background:#faf7f7;
+    border-radius: 10px;
+    margin: 5px;
+}
+.testimonials li{
+    padding: 8px;
+}
+.testimonials li p{
+    font-size: 1.3rem;
+}
+.testimonials li span{
+    font-weight: bolder;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.management h3{
+    margin-top: 10px;
+    font-weight: bolder;
+}
+.management p{
+    padding: 20px;
+}
+.price li{
+    padding: 5px;
+    text-align: justify;
+}
+.plan-price{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+ li{
+    list-style: none;
+}
+.footer{
+    background: #000;
+    text-align: center;
+    padding: 10px;
+}
+.footer p{
+    font-size: 1rem;
+}
+
+
+@media (max-width:1200px){
+    .header h1{
+    font-size: 3.2rem;
+    
+}
+.header li{
+    list-style: none;
+    display: inline;
+    font-size: 1rem;
+    border-right: 1px solid;
+    padding: 0 10px ;
+}
+.jumbotron h2{
+    font-size: 2.5rem;
+    padding: 8px;
+}
+h3{
+    font-size: 1.5rem;
+    padding: 5px;
+}
+.management, .price{
+    background: #eee5e5;
+    border-radius: 10px;
+    text-align: center;
+    align-self: center;
+    padding: 15px;
+    width: 30%;
+    height:auto;
+}
+.management h3{
+    margin-top: 5px;
+    font-weight: bolder;
+}
+.management p{
+    padding: 10px;
+}
+
+}
+
+@media (max-width:900px){
+    .header h1{
+    font-size: 2.2rem;
+    
+}
+.header li{
+    list-style: none;
+    display: inline;
+    font-size: 1rem;
+    border-right: 1px solid;
+    padding: 0 10px ;
+}
+
+}
+@media (max-width:550px){
+    .header h1{
+    font-size: 1.2rem;
+    
+}
+.header li{
+    list-style: none;
+    display: inline;
+    font-size: 0.6rem;
+    border-right: 1px solid;
+    padding: 0 5px ;
+}
+
+}
+@media (max-width:350px){
+    .header h1{
+    font-size: 0.8rem;
+    
+}
+.header li{
+    list-style: none;
+    display: inline;
+    font-size: 0.4rem;
+    border-right: 1px solid;
+    padding: 0 2px ;
+}
+
+}

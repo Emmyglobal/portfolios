@@ -1,0 +1,58 @@
+/* styles.css */
+
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Flash Message Container */
+  .flash-message-container {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 400px;
+  }
+  
+  /* Flash Message Base Style */
+  .flash-message {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 16px;
+    opacity: 0.95;
+  }
+  
+  /* Success Message Styles */
+  .success {
+    background-color: #4CAF50; /* Green for success */
+  }
+  
+  /* Error Message Styles */
+  .error {
+    background-color: #F44336; /* Red for error */
+  }
+  
+  /* Close Button Style */
+  .close-btn {
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  /* Close Button Hover Effect */
+  .close-btn:hover {
+    color: #ccc;
+  }
+  

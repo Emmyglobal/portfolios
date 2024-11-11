@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    box-sizing: border-box;
+    background: url('background.jpg') no-repeat center fixed;
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.main-header{
+    text-align: center;
+    color: #fff;
+    background: linear-gradient(to right, #4d3e4e, #354e36);
+    padding: 25px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.main-header h1{
+    font-size: 40px;
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+.main-header img{
+    display: inline;
+    width: 80px;
+    vertical-align: middle;
+    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.2));
+    opacity: 0.85;
+}
+.description{
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 700px;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px auto;
+    text-align: center;
+}
+.description p{
+    font-size: 18px;
+    line-height: 1.5;
+}
+.header{
+    color: #ffffff;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 15px;
+    border-radius: 8px 8px 0 0;
+    font-size: 24px;
+    background: linear-gradient(to right, #4d3e4e, #354e36);
+}
+.header img{
+    width: 50px;
+    height: 50px;
+}
+.container{
+    max-width: 500px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 8px;
+}
+.form-group{
+    color: #100011;
+    padding: 10px;
+}
+.form-group input, select{
+    border-radius: 5px;
+    border: none;
+    height: 40px;
+    width: 400px;
+}
+button{
+    background: rgb(0, 255, 98);
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    width: 400px;
+    margin-left: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+button:hover{
+    width: 405px;
+    background-color: #23db29;
+    border-radius: 4px;
+}
+button:active{
+    cursor: progress;
+    background: rgb(0, 255, 98);
+    width: 400px;
+}
+label {
+    display: block;
+    color: #044e20;
+}
+@media (max-width: 600px){
+    .container{
+        padding: 10px;
+    }
+
+}

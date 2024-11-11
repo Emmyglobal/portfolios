@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="landin.css">
+    <title>Document</title>
+    <style>
+       *{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header {
+    background: linear-gradient(300deg, #9508d6, #7e24e4, #390966);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  body {
+    background: linear-gradient(300deg, #f2edf5, #bcb1c9, #9f8daf);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+.header{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.header h1{
+    font-family: 'Sono', sans-serif;
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+.header li{
+    list-style: none;
+    display: inline;
+    font-size: 1.4rem;
+    border-right: 1px solid;
+    padding:0 50px ;
+}
+.header li a{
+    text-decoration: none;
+    color: #fff;
+}
+a:hover{
+    color: #eee5e5;
+    font-size: 22px;
+    transition: font-size 0.3s ease-in-out;
+}
+button{
+    border: none;
+    margin: 15px;
+    padding: 10px;
+    color: #fff;
+    background: blue;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+button:hover{
+    background-color: #392bf3;
+    padding: 11px;
+}
+button:active{
+    padding: 10px;
+    cursor: progress;
+}
+.jumbotron{
+    padding: 20px;
+    text-align: center;
+    background-color: transparent; 
+    text-align: center; 
+    margin: 0; 
+    letter-spacing: 2.5px; 
+}
+.jumbotron h2{
+    font-size: 3rem;
+    color: #333;
+    padding: 10px;
+}
+ p{
+    font-size: 18px;
+    color: #666;
+}
+.features, .pricing-plans{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100vw;
+    
+}
+h2{
+    text-align: center;
+    margin: 50px auto 0 auto;
+    font-size: 2rem;
+    color: #000;
+}
+h3{
+    font-size: 1.5rem;
+    padding: 10px;
+}
+.management, .price{
+    background: #eee5e5;
+    border-radius: 10px;
+    text-align: center;
+    align-self: center;
+    padding: 35px;
+    width: 20%;
+    height: 200px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.testimonials{
+    text-align: center;
+    background:#faf7f7;
+    border-radius: 10px;
+    margin: 5px;
+}
+.testimonials li{
+    padding: 8px;
+}
+.testimonials li p{
+    font-size: 1.3rem;
+}
+.testimonials li span{
+    font-weight: bolder;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.management h3{
+    margin-top: 10px;
+    font-weight: bolder;
+}
+.management p{
+    padding: 20px;
+}
+.price li{
+    padding: 5px;
+    text-align: justify;
+}
+.plan-price{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+ li{
+    list-style: none;
+}
+.footer{
+    background: #000;
+    text-align: center;
+    padding: 10px;
+}
+.footer p{
+    font-size: 1rem;
+}
+
+
+@media (max-width:1200px){
+    .header h1{
+    font-size: 3.2rem;
+    
+}
+.header li{
+    list-style: none;
+    display: inline;
+    font-size: 1rem;
+    border-right: 1px solid;
+    padding: 0 10px ;
+}
+.jumbotron h2{
+    font-size: 2.5rem;
+    padding: 8px;
+}
+h3{
+    font-size: 1.5rem;
+    padding: 5px;
+}
+.management, .price{
+    background: #eee5e5;
+    border-radius: 10px;
+    text-align: center;
+    align-self: center;
+    padding: 15px;
+    width: 30%;
+    height:auto;
+}
+.management h3{
+    margin-top: 5px;
+    font-weight: bolder;
+}
+.management p{
+    padding: 10px;
+}
+
+}
+
+@media (max-width:900px){
+    .header h1{
+    font-size: 2.2rem;
+    
+}
+.header li{
+    list-style: none;
+    display: inline;
+    font-size: 1rem;
+    border-right: 1px solid;
+    padding: 0 10px ;
+}
+.features, .pricing-plans{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    
+}
+
+.management, .price{
+    background: #eee5e5;
+    border-radius: 10px;
+    text-align: center;
+    align-self: center;
+    padding: 35px;
+    width: 60vw;
+    height: 200px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+}
+@media (max-width:550px){
+    .header h1{
+    font-size: 1.2rem;
+    
+}
+.header li{
+    list-style: none;
+    display: inline;
+    font-size: 0.6rem;
+    border-right: 1px solid;
+    padding: 0 5px ;
+}
+
+}
+@media (max-width:350px){
+    .header h1{
+    font-size: 0.8rem;
+    
+}
+.header li{
+    list-style: none;
+    display: inline;
+    font-size: 0.4rem;
+    border-right: 1px solid;
+    padding: 0 2px ;
+}
+
+}
+    </style>
+</head>
+<body>
+    <div class="header gradient-background">
+        <h1>Your Catering SaaS Solution</h1>
+        <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contacts">Contact</a></li>
+        </ul>
+        <button>Get Started for Free</button>
+    </div>
+    <div class="jumbotron">
+        <h2>Transform your catering business with our all-in-one platform</h2>
+        <p>Collaborate seamlessly, manage tasks, and achieve more with our all-in-one</p>
+        <button>Start Your Free Trial</button>
+    </div>
+    <h2>Key Features</h2>
+    <div class="features">
+        <div class="management">
+            <h3>Order Management</h3>
+            <p>Streamline bookings and customize menus effortlessly.</p>
+        </div>
+        <div class="management">
+            <h3>Inventory Management</h3>
+            <p>Keep your supplies in check with automated tracking.</p>
+        </div>
+        <div class="management">
+            <h3>Customer Relationship Management</h3>
+            <p>Build lasting relationships with clients for repeat business.</p>
+        </div>
+    </div>
+    <h2>Choose Your Plan</h2>
+    <div class="pricing-plans">
+       
+        <div class="price">   
+            <div class="plan-title"><h3>Starter Plan</h3></div>
+            <div class="plan-price">$29.99/month</div>
+            <ul class="plan-features">
+                <li>✅ For small teams</li>
+                <li>✅ personal business</li>
+                <li>🚫 Support</li>
+            </ul>
+            <button class="plan-button">Join Now</a>
+        </div>
+        <div class="price">   
+            <div class="plan-title"><h3>Professional Plan</h3></div>
+            <div class="plan-price">$49.99/month</div>
+            <ul class="plan-features">
+                <li>✅ Advanced Features</li>
+                <li>✅ For growing Companies</li>
+                <li>✅ Phone &amp; Email Support</li>
+            </ul>
+            <button class="plan-button">Join Now</a>
+        </div>
+        <div class="price">   
+            <div class="plan-title"><h3>Enterprise Plan</h3></div>
+            <div class="plan-price">Custom pricing</div>
+            <ul class="plan-features">
+                <li>✅ Advanced Features</li>
+                <li>✅ For growing Companies</li>
+                <li>✅ 24/7 Support</li>
+            </ul>
+            <button class="plan-button">Join Now</a>
+        </div>
+        
+    </div>
+    <h2>Testimonials</h2><hr>
+    <div class="testimonials">
+        <ul>
+            <li><p>"This platform has revolutionalized our catering business"</p>
+            <span>-Emmyglobal, CEO of Catering Co.</span>
+            </li>
+            <li><p>"Catering Saas solution has transformed the way our team works. We are now more organized and productive than ever!"</p>
+                <span>-Azubuike, CEO of Smokewise Co.</span>
+            </li>
+            <li><p>"Catering Saas solution has transformed the way our team works. We are now more organized and productive than ever!"</p>
+                <span>-Donny, CEO of Pink Flamingo Catering.</span>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 Catering SaaS Solution. All Rights reserved.</p>
+        <a href="#">emmyglobal@catering.com</a>
+    </div>
+</body>
+</html>

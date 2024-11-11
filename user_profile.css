@@ -1,0 +1,516 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: url('hero.jpg') no-repeat fixed center center;
+    background-size: cover;
+}
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('hero.jpg') no-repeat center center;
+    background-size: cover;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    gap: 10px;
+}
+.header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 1px 4px 3px 1px #318B8B;
+    background: linear-gradient(to right, #318B8B, #101C28, #093f58);
+    box-sizing: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+}
+@keyframes gradient-animation{
+    0%{
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.logo img{
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+}
+.link{
+    align-self: center;
+    margin-right: 0;
+    display: flex;
+}
+.link a{
+    text-decoration: none;
+    color: #eee;
+    margin: 0 15px;
+    font-size: 19px;
+    transition: ease-in 0.3s;
+}
+a{
+    text-decoration: none;
+    color: #318B8B;
+}
+.link a:hover{
+    color: #ccc;
+    font-size: 17px;
+}
+.header h1{
+    display: inline;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 26px;
+}
+.profile_cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+.profile_head{
+    background: #318B8B;
+    width: 50%;
+    align-self: center;
+    text-align: center;
+    color: #fff;
+    border-radius: 20px 20px 0 0;
+    padding: 10px;
+}
+.profile_head p{
+    color: #f7eded;
+}
+.profile_hero{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr 3fr 1fr;
+    align-items: center;
+    background: #fff;
+    align-self: center;
+    width: 50%;
+    padding: 0 30px ;
+}
+h3{
+    color: #318B8B;
+    font-size: 24px;
+    font-weight: bolder;
+    margin: 10px;
+}
+h4{
+    margin: 5px;
+}
+p{
+    color: #718080;
+    margin: 5px;
+    line-height: 1.5;
+}
+li{
+    list-style: none;
+}
+.skills ul li{
+    background: #318B8B;
+    color: #fff;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 15px;
+}
+.social li a{
+    font-weight: bold;
+    text-decoration: none;
+    color: #318B8B;;
+}
+.pix img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    margin-bottom: 15px;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    
+}
+button{
+    background: #fff;
+    border-radius: 10px;
+    width: 80px;
+    padding: 5px;
+    border: none;
+    color: #318B8B;
+    transition: width ease-in 0.3s;
+}
+button:hover{
+    width: 105px;
+    cursor: pointer;
+}
+button:focus{
+    width: 110px;
+    cursor: pointer;
+}
+/* CSS for About me Page */
+.about{
+    display: flex;
+    flex-direction: column;
+}
+.about .about-header{
+    /* background: url('./profile_pix.jpg')no-repeat center center;
+    background-size: cover; */
+    color: #fff;
+    position: relative;
+    height: 1000px;
+    width: 100%;
+    padding: 60px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.about-header img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    opacity: 0.85;
+    inset: 0;
+    z-index: 2;
+}
+.about-header::before{
+    content: "";
+    background: color-mix(in srgb, #636262, transparent 50%);
+    position: absolute;
+    inset: 0;
+    z-index: 4;
+}
+.about-header .head-content{
+    position: relative;
+    z-index: 5;
+    text-align: center;
+}
+.about-header .typed{
+    text-align: center;
+    color: #FFF;
+}
+.about-header h2{
+    margin: 0;
+    font-size: 64px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.about-header p{
+    margin: 5px 0 0 0;
+    font-size: 37px;
+    font-weight: 600;
+}
+.about-header p span{
+    letter-spacing: 1.3px;
+}
+.about .about-section{
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+/* .about-section .image img{
+    width: 300px;
+    height: 500px;
+} */
+ .about-section{
+    width: 80%;
+    margin: 0 auto;
+    color: #fff;
+ }
+.about-section .skill-content h5{
+    font-size: 18px;
+    font-weight: 700;
+    margin: 30px 0 15px 0;
+}
+.about-section .progress{
+    height: 36px;
+    display: block;
+    background: none;
+    border-radius: 0;
+    margin-top: 15px;
+}
+.progress .skill{
+    font-size: 1.1em;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0 0 6px 0;
+    text-transform: uppercase;
+    display: block;
+    color: #fff;
+    font-weight: bold;
+}
+.progress .skill .val {
+    float: right;
+    font-style: normal;
+  }  
+  .progress-bar-wrap {
+    background: color-mix(in srgb, #ddd, transparent 90%);
+    height: 20px;
+    border-radius: 5px;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 5px;
+  }
+  .progress-bar {
+    width: 1px;
+    height: 100%;
+    transition: width ease-out 5s;
+    background-color:#318B8B;
+    width: 0;
+  }
+  .about-me{
+    background-color: #318B8B;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 20px;
+  }
+  .about-me h4 {
+    font-size: 28px;
+    position: relative;
+    padding-bottom: 10px;
+    margin: 30px;
+    font-weight: 700;
+  }
+  .about-me h4:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 64px;
+    height: 3px;
+    background: #0078ff;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  .about .about-me p {
+    font-size: 18px;
+    color: #FFF;
+    line-height: 1.9;
+  }
+  .resume{
+    text-align: center;
+  }
+  .about-info{
+    background-color: #fff;
+    color: #111111;
+  }
+  .resume object{
+    width: 90%;
+  }
+  
+
+/* CSS for The Contact section */
+.contact{
+    display: flex;
+    flex-direction: column;
+    background-color: #318B8B;
+    gap: 10px;
+    width: 70vw;
+    align-items: center;
+    align-self: center;
+    border-radius: 20px;
+}
+.contact .contact-title{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.contact .contact-title h2{
+    font-size: 32px;
+    font-weight: 700px;
+    padding: 20px;
+}
+.contact-title p{
+    color: #333;
+}
+.contact .contact-body{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+.contact-body .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    width: 40vw;
+    background-color: #093f58;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 1px 1px 15px #101C28;
+}
+.info h3{
+    font-weight: bold;
+    color: #000;
+}
+.info p{
+    color: #ccc;
+}
+.footer{
+    text-align: center;
+    background: #000;
+    color: #ccc;
+}
+.contact .form-container{
+    align-items: center;
+    align-content: center;
+    padding: 40px;
+    box-shadow: 1px 1px 15px #101C28;
+}
+.form-container div input{
+    border: none;
+    border-radius: 7px;
+    height: 50px;
+    text-align: center;
+}
+.form-container textarea{
+    width: 320px;
+    border: none;
+    border-radius: 7px;
+    height: 50px;
+    text-align: justify;
+}
+.form-container button{
+    width: 120px;
+    padding: 10px;
+    font-size: 14px;
+}
+@media (max-width: 1200px){
+    .profile_head{
+        background: #318B8B;
+        width: 70%;
+        align-self: center;
+        text-align: center;
+        border-radius: 20px 20px 0 0;
+        padding: 10px;
+    }
+    .profile_head p{
+        color: #f7eded;
+    }
+    .profile_hero{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 1fr 3fr 1fr;
+        align-items: center;
+        background: #fff;
+        align-self: center;
+        width: 70%;
+        padding: 0 30px ;
+    }
+}
+@media (max-width: 600px){
+    .header{
+        flex-wrap: wrap;
+    }
+    .profile_head{
+        background: #318B8B;
+        width: 90%;
+        align-self: center;
+        text-align: center;
+        border-radius: 20px 20px 0 0;
+        padding: 10px;
+    }
+    .profile_head p{
+        font-size: 15px;
+    }
+    .profile_hero{
+        display: grid;
+        flex-wrap: wrap;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 1fr 3fr 1fr;
+        align-items: center;
+        background: #fff;
+        align-self: center;
+        width: 90%;
+        padding: 0 15px ;
+    }
+    h1{
+        font-size: 20px;
+    }
+    .link a{
+        margin: 0 10px;
+        font-size: 14px;
+    }
+    .link a:hover{
+        font-size: 15px;
+    }
+    .logo img{
+        height: 30px;
+        width: 30px;
+        border-radius: 4px;
+    }
+    .hero{
+        width: 60vw;
+    }
+    h1{
+        font-size: 15px;
+    }
+    .link a{
+        margin: 0 8px;
+        font-size: 9px;
+    }
+    .link a:hover{
+        font-size: 10px;
+    }
+
+    h3{
+        font-size: 20px;
+        margin: 8px;
+    }
+    h4{
+        margin: 4px;
+    }
+    p{
+        font-size: 13px;
+        margin: 2px;
+        line-height: 1;
+    }
+    .skills ul li{
+        border-radius: 8px;
+        padding: 3px;
+        font-size: 9px;
+    }
+    .pix img{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 3px solid #fff;
+        margin-bottom: 12px;
+    }
+    ul{
+        gap: 5px;
+        
+    }
+    button{
+        border-radius: 7px;
+        width: 90px;
+        padding: 3px;
+    }
+    button:hover, button::after{
+        border-radius: 5px;
+        width: 91px;
+        padding: 4px;
+    }
+}

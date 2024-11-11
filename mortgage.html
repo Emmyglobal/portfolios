@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Mortgage Calculator</title>
+    <link href="favicon2.png" rel="icon">
+    <link rel="stylesheet" href="mort.css">
+</head>
+<body>
+    <div class="container">
+        <div class="main-header">
+            <div class="logo">
+                <img src="logo1.jpg" alt="Logo">
+                <h1>Emmyglobal</h1>
+            </div>
+            <div class="link">
+                <a href="#">Home</a>
+                <a href="#">Calculator</a>
+                <a href="ahoutcal.html">About</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+        <form action="">
+        <div class="hero">
+            <div class="header">
+                <h2>Home Mortgage<br> Calculator</h2>
+            </div>
+            <div class="text-fields">
+                <label for="home">Home Price (&#8358;)</label>
+                <input type="text" name="homePrice" id="homePrice" placeholder="Enter Home price">
+                <label for="down">Down Payment (&#8358;)</label>
+                <input type="text" name="down" id="downPayment" placeholder="Enter the Down Payment">
+                <label for="loan">Loan Term (years)</label>
+                <select name="loan" id="loanTerm">
+                    <option value="15">15</option>
+                    <option value="20">20</option>
+                    <option value="30">30</option>
+                </select>
+                <label for="interest">Interest Rate (%)</label>
+                <input type="text" name="interest" id="interestRate" placeholder="Enter the Interest Rate">
+                <label for="property">Property Taxes (annual, &#8358;)</label>
+                <input type="number" name="property" id="propertyTax" placeholder="Enter the Property Taxes">
+                <label for="homeowner">Homeowner's Insurance (annual, &#8358;):</label>
+                <input type="text" name="homeowner" id="insurance" placeholder="Enter the Insurance cost">
+            </div>
+            <button type="button" id="calculateButton">Calculate</button>
+            <h2>Results</h2><hr>
+            <label for="monthly_payments">Monthly Payment:&#8358;<p id="monthlyPayment">0.00</p></label>
+            <label for="total_cost">Monthly Payment:&#8358;<p id="totalCost">0.00</p></label>
+        </div>
+        </form>
+        
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 Emmyglobal | nwaforugochukwu21@gmail.com</p>
+    </div>
+    <script src="mortgage.js"></script>
+</body>
+</html>
